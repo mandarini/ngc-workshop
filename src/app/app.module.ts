@@ -12,12 +12,12 @@ import { MessageComponent } from './message/message.component';
 import { InputComponent } from './input/input.component';
 
 const config = {
-  apiKey: "AIzaSyCq_8sc1_OeUBViQkmazhoyL97HqMtmrDI",
-  authDomain: "chat-psybercity.firebaseapp.com",
-  databaseURL: "https://chat-psybercity.firebaseio.com",
-  projectId: "chat-psybercity",
-  storageBucket: "chat-psybercity.appspot.com",
-  messagingSenderId: "419036519980"
+  apiKey: "<YOUR_API_KEY_HERE>",
+  authDomain: "YOUR-PROJECT-ID.firebaseapp.com",
+  databaseURL: "https://YOUR-PROJECT-ID.firebaseio.com",
+  projectId: "YOUR-PROJECT-ID",
+  storageBucket: "YOUR-PROJECT-ID.appspot.com",
+  messagingSenderId: "YOUR-MESSAGE-ID"
 };
 
 @NgModule({
