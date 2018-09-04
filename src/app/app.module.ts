@@ -7,6 +7,7 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
+import { ChatComponent } from './chat/chat.component';
 
 const config = {
   apiKey: "AIzaSyCq_8sc1_OeUBViQkmazhoyL97HqMtmrDI",
@@ -19,7 +20,8 @@ const config = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,
