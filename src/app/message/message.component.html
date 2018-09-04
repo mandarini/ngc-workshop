@@ -1,3 +1,5 @@
-<div>
+<div class="chat-msg" [ngClass]="{'other': userAuth !== message.user, 'own': userAuth === message.user}">
+ <span>
    {{message.user}} - {{message.msg}}
+ </span>
 </div>

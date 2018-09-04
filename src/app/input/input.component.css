@@ -1,0 +1,26 @@
+.input-container {
+  width: 100%;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 7px 8px 7px 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+input[type=text] {
+  flex-grow: 1;
+  padding: 17px 20px;
+  margin: 0;
+  background-color: #fafafa;
+  box-sizing: border-box;
+  border-radius: 1px;
+  border: 0px;
+  box-shadow: 0;
+}
+
+button {
+ margin-right: 30px;
+}

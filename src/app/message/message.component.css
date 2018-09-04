@@ -1,0 +1,24 @@
+.chat-msg {
+  display: inline-block;
+  padding: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  width: auto;
+  max-width: 90%;
+  word-wrap: break-word;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 0;
+}
+
+.chat-msg.own {
+  background-color: rgb(159, 124, 150);
+  color: white;
+  float: right;
+}
+
+.chat-msg.other {
+  background-color: rgb(224, 224, 224);
+  color: black;
+  float: left;
+}
