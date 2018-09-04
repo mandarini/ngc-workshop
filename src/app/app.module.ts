@@ -8,6 +8,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
 import { ChatComponent } from './chat/chat.component';
+import { MessageComponent } from './message/message.component';
+import { InputComponent } from './input/input.component';
 
 const config = {
   apiKey: "AIzaSyCq_8sc1_OeUBViQkmazhoyL97HqMtmrDI",
@@ -21,7 +23,9 @@ const config = {
 @NgModule({
   declarations: [
     AppComponent,
-    ChatComponent
+    ChatComponent,
+    MessageComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
