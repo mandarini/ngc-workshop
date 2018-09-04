@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, AfterViewChecked, ElementRef, ViewChild } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { Observable } from 'rxjs';
 import { Message } from '../message.model';
@@ -10,6 +10,8 @@ import { Message } from '../message.model';
 })
 export class ChatComponent implements OnInit {
 
+  @ViewChild('msgContainer') private messagesContainer: ElementRef;
+
   @Input() userAuth: string;
   messages: Observable<any[]>;
   private msgRef: AngularFirestoreCollection<Message>;
@@ -20,6 +22,17 @@ export class ChatComponent implements OnInit {
 
   ngOnInit() {
     this.messages = this.msgRef.valueChanges();
+    this.scrollToBottom();
   }
+
+  ngAfterViewChecked() {
+       this.scrollToBottom();
+  }
+
+  scrollToBottom(): void {
+    try {
+        this.messagesContainer.nativeElement.scrollTop = this.messagesContainer.nativeElement.scrollHeight;
+    } catch(err) { }
+  } 
 
 }

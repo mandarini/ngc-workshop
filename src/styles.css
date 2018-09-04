@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  position: relative;
+
+  display: block;
+  padding: 16px;
+
+  text-transform: uppercase;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+  background-color: #2ecc71;
+  color: #ecf0f1;
+}
