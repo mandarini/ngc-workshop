@@ -16,7 +16,7 @@ export class InputComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendMsg(msg) {
+  sendMsg(msg:string) {
     if (msg !== null) {
       let message = {
         msg: msg,
@@ -25,6 +25,12 @@ export class InputComponent implements OnInit {
       };
       this.msgService.addMsg(message);
     }
+  }
+
+  onKey(event: any, msg: string) {
+   if (event.keyCode === 13) {
+     this.sendMsg(msg);
+   }
   }
 
 }
